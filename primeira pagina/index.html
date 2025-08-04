@@ -3,58 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".//CSS/style.css">
+    <script src=".//JS/script.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <title>Hello world</title>
 </head>
 <body>
-    <h1>formulário de torcedor</h1>
-    <form action="">
-
-        <label for="name">Nome</label>
-        <input type="text" name="Nome" id="required"><br><br>
-        
-        <label for="idade">idade</label>
-        <input type="text" name="idade" id="required"><br><br>
-        
-        <label for="">telefone</label>
-        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="XX-XXXXX-XXXX" id="required"><br><br>
-
-        <label for="">times do coração</label>
-        <select id="time" name="time">
-        <option value="team1">São Paulo</option>
-        <option value="team2">Santos</option>
-        <option value="team3">Palmeiras</option>
-        <option value="team4">corinthians</option>
-        <option value="team5">Flamengo</option>
-        <option value="team6">Fluminense</option>
-        <option value="team7">Vasco</option>
-        <option value="team8">Botafogo</option>
-        </select><br><br>
-  </form>
-       
-        <form action="checkbox" id="Se voce eh socio">
-        <input type="checkbox" id="Sim">
-        <label for="">Voce é um socio torcedor?</label><br><br>
-        <input type="checkbox" id="Sim">
-        <label for="">Aceita receber sms?</label><br><br>
-      
-        <label for="">Você vai com qual frequencia ao estadio</label>
-        <label for="">1 vez por mês</label>
-        <label for="">3 vezes por mês</label>
-        <label for="">mais de 3 vezes ao mês</label>
-        <input type="radio" id="1vez" name="frequencia" value="1vez" required>
-        <input type="radio" id="3vezes" name="frequencia" value="3vezes" required>
-        <input type="radio" id="Mais3vezes" name="frequencia" value="Mais3vezes" required><br><br>
-        <input type="submit" value="Enviar">
-
-
-
-
-
-
-
-        </select>
-
-        
-    
+    <h1 class="form-title">Formulário de Torcedor</h1>
+    <form class="form-section">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="Nome" id="required">
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="text" name="idade" id="required">
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="XX-XXXXX-XXXX" id="required">
+        </div>
+        <div class="form-group">
+            <label for="time">Times do coração</label>
+            <select id="time" name="time">
+                <option value="team1">São Paulo</option>
+                <option value="team2">Santos</option>
+                <option value="team3">Palmeiras</option>
+                <option value="team4">Corinthians</option>
+                <option value="team5">Flamengo</option>
+                <option value="team6">Fluminense</option>
+                <option value="team7">Vasco</option>
+                <option value="team8">Botafogo</option>
+            </select>
+        </div>
+     <div class="form-group">
+    <div class="checkbox-group">
+        <input type="checkbox" id="socio">
+        <label for="socio">Você é um sócio torcedor?</label>
+    </div>
+    <div class="checkbox-group">
+        <input type="checkbox" id="sms">
+        <label for="sms">Aceita receber SMS?</label>
+    </div>
+</div>
+<div class="form-group">
+    <label>Você vai com qual frequência ao estádio?</label>
+    <div class="radio-group">
+        <label>
+            <input type="radio" id="1vez" name="frequencia" value="1vez" required>
+            1 vez por mês
+        </label>
+        <label>
+            <input type="radio" id="3vezes" name="frequencia" value="3vezes" required>
+            3 vezes por mês
+        </label>
+        <label>
+            <input type="radio" id="Mais3vezes" name="frequencia" value="Mais3vezes" required>
+            Mais de 3 vezes ao mês
+        </label>
+    </div>
+</div>
+        <input type="submit" value="Enviar" class="submit-btn">
+    </form>
 </body>
 </html>
