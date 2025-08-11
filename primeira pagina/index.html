@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".//CSS/style.css">
-    <script src=".//JS/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <title>Hello world</title>
 </head>
 <body>
     <h1 class="form-title">Formulário de Torcedor</h1>
-    <form class="form-section">
+    <form action="pages/cadastrarAction.php" method="POST" class="form-section">
         <div class="form-group">
             <label for="name">Nome</label>
             <input type="text" name="Nome" id="required">
@@ -27,14 +27,14 @@
         <div class="form-group">
             <label for="time">Times do coração</label>
             <select id="time" name="time">
-                <option value="team1">São Paulo</option>
-                <option value="team2">Santos</option>
-                <option value="team3">Palmeiras</option>
-                <option value="team4">Corinthians</option>
-                <option value="team5">Flamengo</option>
-                <option value="team6">Fluminense</option>
-                <option value="team7">Vasco</option>
-                <option value="team8">Botafogo</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Santos">Santos</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Corinthians">Corinthians</option>
+                <option value="Flamengo">Flamengo</option>
+                <option value="Fluminense">Fluminense</option>
+                <option value="Vasco">Vasco</option>
+                <option value="Botafogo">Botafogo</option>
             </select>
         </div>
      <div class="form-group">
